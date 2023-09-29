@@ -62,3 +62,11 @@
 
 4. Instalando o docker no EC2 pelo documentação do docker `https://docs.docker.com/engine/install/ubuntu/`
    ![1696012892553](image/README/1696012892553.png)
+
+## Vídeo Conclusão:
+
+[Acesse aqui](https://drive.google.com/file/d/1ySjT6aDBkKIDl6HLtYKcWQg7QBkcK0mT/view?usp=drive_link)
+
+## Para rodar o projeto
+Na pasta raiz, rode o comando:
+`Docker compose up`
