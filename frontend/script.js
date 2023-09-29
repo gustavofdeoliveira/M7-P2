@@ -4,7 +4,7 @@ function addTask() {
 
   if (taskText !== "") {
     //Realizar um POST com fetch para enviar os dados para o backend
-    fetch("http://localhost:3001/create_note", {
+    fetch("http://3.208.163.53:3001/create_note", {
       method: "POST",
       body: JSON.stringify({
         titulo: `Minha Nota`,
@@ -26,7 +26,7 @@ function getTasks() {
   const taskList = document.getElementById("taskList");
   //Limpa a lista
   taskList.innerHTML = "";
-  fetch("http://localhost:3001/notes")
+  fetch("http://3.208.163.53:3001/notes")
     .then((response) => response.json())
     .then((data) => {
       data["data"].forEach((task) => {
@@ -57,7 +57,7 @@ function getTasks() {
 }
 
 function deleteTask(id){
-  fetch(`http://localhost:3001/delete_note/`, {
+  fetch(`http://3.208.163.53:3001/delete_note/`, {
     method: "DELETE",
     headers: {
       "Content-type": "application/json; charset=UTF-8",
